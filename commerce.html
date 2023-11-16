@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="top-nav">
+            <div class="container tn-container">
+                <div class="info">
+                    <span>
+                        <span class="lnr lnr-phone-handset"></span>
+                        +254790000000
+                    </span>
+
+                    <span>
+                        <span class="lnr lnr-envelope"></span>
+                        info@yoursite.com
+                    </span>
+
+                    <span>
+                        <span class="lnr lnr-location"></span>
+                        1020 Kenyatta Avenue
+                    </span>
+                </div>
+                <div class="tn-btns">
+                    <div>
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <select name="" id="currency-select">
+                            <option value="">AFD</option>
+                            <option value="">EAD</option>
+                            <option value="">WAD</option>
+                        </select>
+                    </div>
+                    <a href=""><i class="fa-solid fa-user"></i>My account</a>
+                </div>
+            </div>
+        </div>
+        <div class="below-nav">
+            <div class="container bn-container">
+                <a href="" class="logo">MAHN <span>MULI</span></a>
+                <ul class="navlist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">shop</a>
+                        <ul class="submenu">
+                            <li><a href="#">Latest products</a></li>
+                            <li><a href="#">Products list</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">blog</a>
+                        <ul class="submenu">
+                            <li><a href="#">Blog list</a></li>
+                            <li><a href="#">Blog details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+                <div class="bt-btns">
+                    <div class="menu-btn">
+                        <span class="lnr lnr-menu"></span>
+                    </div>
+                    <span class="lnr lnr-magnifier" id="search-btn"></span>
+                    <span class="lnr lnr-user" id="login-btn"></span>
+                    <span class="lnr lnr-cart active" id="cart-btn">
+                        <p id="checkout-items">3</p>
+                    </span>
+                </div>
+                <form action="" class="search-form">
+                    <input type="search" id="search-box" placeholder="Search here...">
+                    <label for="search-box" class="fa-solid fa-search"></label>
+                </form>
+                <form action="" class="login-form">
+                    <h3>Login Now</h3>
+                    <div class="box">
+                        <input type="email" class="box" placeholder="Enter Your Email">
+                        <input type="password" class="box" placeholder="Enter Your Password">
+                        <p>Forgot your password? <a href="">Click here</a></p>
+                        <p>Don't have an account? <a href="">Create account</a></p>
+                        <input type="submit" value="Login now" class="btn">
+                    </div>
+                </form>
+
+                <div class="cart-box">
+                    <h3>My Cart</h3>
+                    <div class="box">
+                        <img src="images/web1.jpg" alt="">
+                        <div>
+                            <h5>Styling Bag</h5>
+                            <div class="price">
+                                <span>$4.99</span>
+                                <select name="" id="cart-box-select">
+                                    <option value="">1 place</option>
+                                    <option value="">2 place</option>
+                                    <option value="">3 place</option>
+                                </select>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+
+                    <div class="box">
+                        <img src="images/web2.jpg" alt="">
+                        <div>
+                            <h5>Brand Shoes</h5>
+                            <div class="price">
+                                <span>$2.99</span>
+                                <select name="" id="cart-box-select">
+                                    <option value="">1 place</option>
+                                    <option value="">2 place</option>
+                                    <option value="">3 place</option>
+                                </select>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+
+                    <div class="box">
+                        <img src="images/web3.jpg" alt="">
+                        <div>
+                            <h5>Jewellery</h5>
+                            <div class="price">
+                                <span>$14.99</span>
+                                <select name="" id="cart-box-select">
+                                    <option value="">1 place</option>
+                                    <option value="">2 place</option>
+                                    <option value="">3 place</option>
+                                </select>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                    <div class="total">
+                        <h4>Total = $14.56</h4>
+
+                    </div>
+                    <div class="cart-btns">
+                        <div class="c-btn active">View Cart</div>
+                        <div class="c-btn">Checkout</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--
+        Home
+    -->
+
+    <section class="home" id="home">
+        <div class="container home-container">
+            <div class="left">
+                <img src="images/wall1.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <h3>Shop is fun</h3>
+                    <h1>BROWSE OUR PREMIUM PRODUCTS</h1>
+                    <p>
+                        The odds of going to the store for a loaf of bread and coming
+                        out with only a loaf of bread are three billion to one.
+                        Buy what you don't have yet, or what you
+                        really want, which can be mixed with what you already own.
+                        Buy only because
+                        something excites you, not just for the simple act of shopping.
+                    </p>
+                    <button class="btn">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---
+        Featured
+    -->
+
+    <section class="feature reveal fade-left">
+        <div class="feature-container">
+            <div class="box">
+                <img src="images/web2.jpg" alt="">
+                <div class="f-overlay">
+                    <h4>Apple Products</h4>
+                    <span>Buy Accesories</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web3.jpg" alt="">
+                <div class="f-overlay">
+                    <h4>Jewellery 1</h4>
+                    <span>Buy Jewellery</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web4.jpg" alt="">
+                <div class="f-overlay">
+                    <h4>Jewellery 2</h4>
+                    <span>Buy Jewellery</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web5.jpg" alt="">
+                <div class="f-overlay">
+                    <h4>Jewellery 3</h4>
+                    <span>Buy Jewellery</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web6.jpg" alt="">
+                <div class="f-overlay">
+                    <h4>Jewellery 4</h4>
+                    <span>Buy Jewellery</span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web7.jpg" alt="">
+                <div class="f-overlay">
+                    <h4>Jewellery 5</h4>
+                    <span>Buy Jewellery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        Shop
+    -->
+
+    <section class="shop reveal fade-bottom" id="shop">
+        <div class="title reveal fade-left">
+            <h2>Latest Products</h2>
+        </div>
+        <div class="container shop-container reveal fade-bottom">
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3"
+                navigation="true" space-between="30" autoplay-delay="3500" autoplay-disable-on-interaction="false">
+
+                <div class="swiper-slide">
+                    <img src="images/web11.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web1.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web2.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web3.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web4.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web5.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web6.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web7.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web8.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web9.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/web10.jpg" alt="">
+                    <h5>Samsung c Series phone</h5>
+                    <span>$499.99</span>
+                    <div class="swiper-overlay">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="lnr lnr-cart"></span>
+                        <span class="lnr lnr-heart"></span>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </swiper-container>
+        </div>
+        <div class="feature-container reveal fade-bottom">
+            <div class="box">
+                <span class="lnr lnr-rocket"></span>
+                <h3>Fast Secure Payments</h3>
+            </div>
+            <div class="box blue">
+                <span class="lnr lnr-diamond"></span>
+                <h3>Premium Products</h3>
+            </div>
+            <div class="box">
+                <span class="lnr lnr-map-marker"></span>
+                <h3>Delivery World Wide</h3>
+            </div>
+        </div>
+
+        <!--
+            Trending products
+        -->
+
+        <div class="title reveal fade-left">
+            <h2>Our Top Products</h2>
+        </div>
+        <div class="container products-container reveal fade-right">
+            <div class="box">
+                <img src="images/web10.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web11.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web12.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web13.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web14.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web16.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web1.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web12.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web13.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web14.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web10.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/web11.jpg" alt="">
+                <h5>iPhone 12 Series</h5>
+                <span>$4446.54</span>
+                <div class="swiper-overlay">
+                    <span class="lnr lnr-magnifier"></span>
+                    <span class="lnr lnr-cart"></span>
+                    <span class="lnr lnr-heart"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="pagination">
+                <li><a href="#">&#8810</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&#8811</a></li>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        B. SPOT
+    -->
+    <section class="blog" id="blog">
+        <div class="title reveal fade-left">
+            <h2>Our Latest Blogs</h2>
+        </div>
+        <div class="container blog-container reveal fade-right">
+            <div class="box">
+                <div class="image">
+                    <img src="images/web9.jpg" alt="">
+                    <div class="blog-overlay">
+                        <h4>Our Shop offers top quality services to our customers</h4>
+                        <p>By Admin | JULY 4, 2023</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/web10.jpg" alt="">
+                    <div class="blog-overlay">
+                        <h4>Our Shop offers top quality services to our customers</h4>
+                        <p>By Admin | JULY 4, 2023</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/web14.jpg" alt="">
+                    <div class="blog-overlay">
+                        <h4>Our Shop offers top quality services to our customers</h4>
+                        <p>By Admin | JULY 4, 2023</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/web1.jpg" alt="">
+                    <div class="blog-overlay">
+                        <h4>Our Shop offers top quality services to our customers</h4>
+                        <p>By Admin | JULY 4, 2023</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/web11.jpg" alt="">
+                    <div class="blog-overlay">
+                        <h4>Our Shop offers top quality services to our customers</h4>
+                        <p>By Admin | JULY 4, 2023</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/web16.jpg" alt="">
+                    <div class="blog-overlay">
+                        <h4>Our Shop offers top quality services to our customers</h4>
+                        <p>By Admin | JULY 4, 2023</p>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!--
+        Contact section
+    -->
+
+    <section class="contact reveal fade-bottom" id="contact">
+        <div class="title reveal fade-left">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="container contact-container">
+            <div class="row">
+                <div class="contact-info">
+                    <p>1020 Kenyatta Avenue</p>
+                    <p>+254790000000</p>
+                    <p>info@yoursite.com</p>
+                    <div class="contact-social">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                        <a href=""><i class="fa-brands fa-behance"></i></a>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your name">
+                        <input type="email" placeholder="Your email">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Message"></textarea>
+                        <button class="btn">SEND NOW</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map reveal fade-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8122997385535!2d36.8143620741831!3d-1.286689135624903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10c55202d22b%3A0x9476f14fd49cde4d!2sKenyatta%20Ave%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1688632783246!5m2!1sen!2ske"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        About Section
+    -->
+    <section class="about reveal fade-bottom" id="about">
+        <div class="about-btn">
+            <a href="" class="btn reveal fade-left">Follow us on our Social Platforms</a>
+        </div>
+        <div class="about-image row">
+            <a href=""><img src="images/web11.jpg" alt=""></a>
+            <a href=""><img src="images/web12.jpg" alt=""></a>
+            <a href=""><img src="images/web13.jpg" alt=""></a>
+            <a href=""><img src="images/web14.jpg" alt=""></a>
+            <a href=""><img src="images/web16.jpg" alt=""></a>
+            <a href=""><img src="images/web10.jpg" alt=""></a>
+        </div>
+    </section>
+
+
+    <!--
+        Footer
+    -->
+    <section class="footer">
+        <div class="container footer-container reveal fade-bottom">
+            <div class="f-about">
+                <h4>About</h4>
+                <p>
+                    The odds of going to the store for a loaf of bread and coming
+                    out with only a loaf of bread are three billion to one.
+                    Buy what you don't have yet, or what you
+                    really want, which can be mixed with what you already own.
+                    Buy only because
+                    something excites you, not just for the simple act of shopping.
+
+                </p>
+                <img src="images/web1.jpg" alt="">
+            </div>
+
+            <div class="about-widget">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Track Us</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Shipping</a></li>
+                    <li><a href="">Branches</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Faqs</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-widget">
+                <h4>Latest Blog</h4>
+                <div class="posts">
+                    <div class="lp-item">
+                        <img src="images/web2.jpg">
+                        <div class="lp-content">
+                            <h6>What shoes to wear</h6>
+                            <span>Aug 2, 2023</span>
+                            <a href="" class="readmore">Read More</a>
+                        </div>
+                    </div>
+                    <div class="lp-item">
+                        <img src="images/web2.jpg">
+                        <div class="lp-content">
+                            <h6>What shoes to wear</h6>
+                            <span>Aug 2, 2023</span>
+                            <a href="" class="readmore">Read More</a>
+                        </div>
+                    </div>
+                    <div class="lp-item">
+                        <img src="images/web2.jpg">
+                        <div class="lp-content">
+                            <h6>What shoes to wear</h6>
+                            <span>Aug 2, 2023</span>
+                            <a href="" class="readmore">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-widget contact-widget">
+                <h4>Location</h4>
+                <div class="con-info">
+                    <span>A.</span>
+                    <p>Mahn Muli Ltd</p>
+                </div>
+                <div class="con-info">
+                    <span>B.</span>
+                    <p>1020 Kenyatta Avenue</p>
+                </div>
+                <div class="con-info">
+                    <span>C.</span>
+                    <p>+254790000000</p>
+                </div>
+                <div class="con-info">
+                    <span>D.</span>
+                    <p>info@yoursite.com</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-social reveal fade-right">
+            <div class="container">
+                <div class="social-links">
+                    <a href=""><i class="fa-brands fa-google-plus"></i><span>g+plus</span></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i><span>facebook</span></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i><span>twitter</span></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i><span>instagram</span></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i><span>youtube</span></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">Copyright &copy; All rights reserved</div>
+    </section>
+
+    <!--Swiper js-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+    <!--custom js file-->
+
+    <script src="commerce.js"></script>
+</body>
+
+</html>
